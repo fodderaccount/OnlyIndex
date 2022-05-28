@@ -114,7 +114,7 @@
             <?php
 
 
-            $connect = mysqli_connect('localhost', 'root', '', 'tunesourcedb');
+            $connect = mysqli_connect('3.132.234.157', 'duynh', '123@123a', 'duynhtunesourcedb');
 
             if (isset($_POST['searchbtn'])) {
 
