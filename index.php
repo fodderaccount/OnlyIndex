@@ -179,8 +179,7 @@
                 <?php
 
                 //Kết nối theo Mysqli procedural
-                $connect = mysqli_connect('localhost', 'root', '', 'tunesourcedb');
-
+                $connect = mysqli_connect('3.132.234.157', 'duynh', '123@123a', 'duynhtunesourcedb');
                 // Nếu click vào nút login thì mới thực hiện 
                 if (isset($_POST['login'])) {
 
@@ -237,7 +236,7 @@
                 <?php
 
                 //Kết nối theo Mysqli procedural
-                $connect = mysqli_connect('localhost', 'root', '', 'tunesourcedb');
+                $connect = mysqli_connect('3.132.234.157', 'duynh', '123@123a', 'duynhtunesourcedb');
 
                 // Nếu click vào nút login thì mới thực hiện 
                 if (isset($_POST['signup'])) {
@@ -250,7 +249,7 @@
 
 
                     // Thực thi truy vấn
-                    $result = mysqli_query($connect, $sql);
+                    $connect = mysqli_connect('3.132.234.157', 'duynh', '123@123a', 'duynhtunesourcedb');
                     // Trả về kết quả , chính là các dòng được truy vấn
                     $row = mysqli_num_rows($result);
                     // Nếu $row > 0 --> có trên 1 dòng trong CSDL trùng với dữ liệu nhập vào form -> đăng nhập thành công 
@@ -290,7 +289,7 @@
         <!--products----------------------->
         <div class="product-container">
             <?php
-            $connect = mysqli_connect('localhost', 'root', '', 'tunesourcedb');
+            $connect = mysqli_connect('3.132.234.157', 'duynh', '123@123a', 'duynhtunesourcedb');
             if (!$connect) {
                 echo "Failed";
             }
